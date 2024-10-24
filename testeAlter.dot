@@ -1,0 +1,35 @@
+X FIM
+Y FIM
+Z OUTRO
+F ALTERN
+LI SUMIDOUROS
+A -> B
+A -> C
+B -> X
+B -> Y
+B -> Z
+C -> Y
+C -> Z
+D -> E
+E -> F
+strict digraph resultado_exemplo {
+
+    X [FIM=1];
+    Y [FIM=1];
+    Z [OUTRO=1];
+    F [ALTERN=1];
+    A [FIM=3,OUTRO=2];
+    B [FIM=2,OUTRO=1];
+    C [FIM=1,OUTRO=1];
+    D [ALTERN=1];
+    E [ALTERN=1];
+    A -> B;
+    A -> C;
+    B -> X;
+    B -> Y;
+    B -> Z;
+    C -> Y;
+    C -> Z;
+    D -> E;
+    E -> F;
+}
